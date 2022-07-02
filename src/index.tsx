@@ -1,10 +1,29 @@
 import * as React from 'react'
-import styles from './styles.module.css'
+import { MathJaxContext, MathJax } from 'better-react-mathjax'
+import ReactMarkdown, { Options } from 'react-markdown'
+import RemarkMath from 'remark-math'
 
+type OptionsOmitingChildren = Omit<Options, 'children'>
 interface Props {
-  text: string
+  markdown: string
+  reactMarkdownProps?: OptionsOmitingChildren
 }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
+export const ReactMarkdownMath = ({ markdown, reactMarkdownProps }: Props) => {
+  const reactMarkdownPropswithMathjax = {
+    ...reactMarkdownProps,
+    remarkplugins: [RemarkMath],
+    components: {
+      ...reactMarkdownProps?.components,
+      math: (props: any) => <MathJax>{props.value}</MathJax>,
+      inlineMath: (props: any) => <MathJax>{props.value}</MathJax>
+    }
+  }
+  return (
+    <MathJaxContext>
+      <ReactMarkdown {...reactMarkdownPropswithMathjax}>
+        {markdown}
+      </ReactMarkdown>
+    </MathJaxContext>
+  )
 }

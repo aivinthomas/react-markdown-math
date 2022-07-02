@@ -1,10 +1,8 @@
 import React from 'react'
-
-import { ExampleComponent } from 'react-markdown-math'
-import 'react-markdown-math/dist/index.css'
+import { ReactMarkdownMath } from 'react-markdown-math'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <ReactMarkdownMath markdown='\\(\\frac{10}{4x} \\approx 2^{12}\\)' />
 }
 
 export default App

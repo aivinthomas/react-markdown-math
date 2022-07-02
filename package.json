@@ -59,5 +59,10 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "better-react-mathjax": "^2.0.1",
+    "react-markdown": "^8.0.3",
+    "remark-math": "^5.1.1"
+  }
 }
