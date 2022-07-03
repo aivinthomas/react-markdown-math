@@ -13,6 +13,7 @@ A react wrapper library for React Markdown so that you can render complex math e
     *   [`reactMarkdownProps`](#reactMarkdownProps)
 *   [Contribute](#contribute)
 *   [License](#license)
+*   [Related]{#related}
 
 ## What is this?
 
@@ -40,7 +41,7 @@ npm install react-markdown-math
 
 ## API
 
-The default export is `ReactMarkdown`.
+The default export is `ReactMarkdownMath`.
 
 ### `markdown`
 
@@ -56,6 +57,11 @@ TBD
 ## License
 
 [MIT][license]
+
+## Related
+
+* [React Markdown][react-markdown]
+* [Better React MathJax][better-react-mathjax]
 
 [latex]: https://www1.cmc.edu/pages/faculty/aaksoy/latex/latexthree.html
 

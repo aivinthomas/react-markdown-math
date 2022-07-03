@@ -1,6 +1,6 @@
 {
   "name": "react-markdown-math",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react wrapper library for React Markdown so that you can render complex math equations in no time",
   "author": "aivinthomas",
   "license": "MIT",
@@ -8,6 +8,7 @@
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
+  "keywords": ["react-markdown","react-mathjax","react-math"],
   "engines": {
     "node": ">=10"
   },
