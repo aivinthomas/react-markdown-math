@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { ReactMarkdownMath } from '.'
 
-describe('ExampleComponent', () => {
+describe('ReactMarkdownMath', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(ReactMarkdownMath).toBeTruthy()
   })
 })
