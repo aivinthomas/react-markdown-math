@@ -7,13 +7,13 @@ A react wrapper library for React Markdown so that you can render complex math e
 *   [What is this?](#what-is-this)
 *   [When should I use this?](#when-should-i-use-this)
 *   [Install](#install)
-*   [Use](#use)
+*   [Usage](#use)
 *   [API](#api)
     *   [`markdown`](#markdown)
     *   [`reactMarkdownProps`](#reactMarkdownProps)
 *   [Contribute](#contribute)
 *   [License](#license)
-*   [Related]{#related}
+*   [Related](#related)
 
 ## What is this?
 
@@ -33,7 +33,7 @@ You might need to render complex mathematical equations written in Markdown for 
 ```sh
 npm install react-markdown-math
 ```
-## Use
+## Usage
 
 ```sh
 <ReactMarkdownMath markdown='\\(\\frac{10}{4x} \\approx 2^{12}\\)' />
@@ -52,7 +52,7 @@ This optional prop is for additional configuration of React Markdown. Find the d
 
 ## Contribute
 
-TBD
+If you find any issues or scope for improvement, please feel free to raise a pull request. If you feel like you don't have the bandwidth to get your hands dirty, please do create a [new][create-issue] issue while ensuring its not a duplicate.
 
 ## License
 
@@ -82,3 +82,5 @@ TBD
 [react-markdown-props]: https://github.com/remarkjs/react-markdown#props
 
 [better-react-mathjax]: https://github.com/fast-reflexes/better-react-mathjax
+
+[create-issue]: https://github.com/aivinthomas/react-markdown-math/issues/new/choose

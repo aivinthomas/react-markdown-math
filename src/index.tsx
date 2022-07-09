@@ -20,7 +20,7 @@ export const ReactMarkdownMath = ({ markdown, reactMarkdownProps }: Props) => {
     }
   }
   return (
-    <MathJaxContext>
+    <MathJaxContext hideUntilTypeset='first'>
       <ReactMarkdown {...reactMarkdownPropswithMathjax}>
         {markdown}
       </ReactMarkdown>
